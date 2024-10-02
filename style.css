@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #3498db, #88c3b4);
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    padding-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+form {
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 24px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+form button {
+    background: #77b1ce;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #3498db;
+}
+
+.todo {
+    list-style: none;
+}
+
+.todo li {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.todo li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todo i:hover {
+    color: #e74c3c;
+}
+
+li.completed {
+    color: #aaa;
+}
+
+li.completed span {
+    text-decoration: line-through;
+}
